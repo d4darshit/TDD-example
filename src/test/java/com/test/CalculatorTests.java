@@ -47,6 +47,16 @@ class CalculatorTests {
 			ob.add("1,-2");
 		});
 	}
+	@Test
+	public void whenNegativeNumbersAreUsed() {
+		Assertions.assertThrows(RuntimeException.class, ()->{
+			ob.add("1,-2,-10,4,8");
+		});
+	}
+	@Test
+	public void TestGetCalledCount() {
+		ob.getCalledCount();
+	}
 	
 	
 	
