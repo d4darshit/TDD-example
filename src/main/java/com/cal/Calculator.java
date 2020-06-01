@@ -4,10 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator {
+	static int count=0;
+
+	public static void incrementCount() {
+		count++;
+	}
+	public static int getCounterValue() {
+		return count;
+	}
 
 	public int add(String string) {
 				int sum = 0;
-		
 				List<Integer> negative = new ArrayList<Integer>();
 			
 				String array[] = string.split(",|\n");
@@ -36,6 +43,10 @@ public class Calculator {
 				
 				return sum;
 	
+	}
+
+	public int getCalledCount() {
+		return getCounterValue(); 
 	}
 
 }
