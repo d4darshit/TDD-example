@@ -2,7 +2,7 @@ package com.cal;
 
 public class Calculator {
 
-	public void add(String string) {
+	public int add(String string) {
 				String array[] = string.split(",");
 				if(array.length>2) {
 					throw new RuntimeException("Only two numbers are allowed");
@@ -12,6 +12,7 @@ public class Calculator {
 						Integer.parseInt(x);
 					}
 				}
+				return 0;
 	
 	}
 

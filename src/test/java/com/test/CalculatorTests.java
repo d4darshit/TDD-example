@@ -29,6 +29,10 @@ class CalculatorTests {
 			ob.add("1,two");
 		});
 	}
+	@Test
+	public void allowNewLineBetweenNumbers() {
+		assertEquals(3,ob.add("1\n2"));
+	}
 	
 	
 	
