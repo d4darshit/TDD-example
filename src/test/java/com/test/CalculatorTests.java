@@ -59,7 +59,7 @@ class CalculatorTests {
 	}
 	@Test
 	public void checkForNumbersGreaterThanThousand() {
-		assertEquals(2,"1001,2");
+		assertEquals(2,ob.add("1001,2"));
 	}
 	
 	@AfterEach

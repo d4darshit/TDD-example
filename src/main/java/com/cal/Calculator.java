@@ -36,7 +36,11 @@ public class Calculator {
 				
 				for(String x:array) {
 					if(!string.isEmpty()) {
-						sum+=Integer.parseInt(x);
+						int t = Integer.parseInt(x);
+						if(t<=1000)
+							sum+=t;
+						else
+							continue;
 						}
 				}
 				
