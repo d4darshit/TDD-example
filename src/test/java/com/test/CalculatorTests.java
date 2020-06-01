@@ -37,6 +37,10 @@ class CalculatorTests {
 	public void whenNoNumbersAreGivenThenReturnZero() {
 		assertEquals(0, ob.add(""));
 	}
+	@Test
+	public void addTwoNumbers() {
+		assertEquals(10,ob.add("4,6"));
+	}
 	
 	
 	
