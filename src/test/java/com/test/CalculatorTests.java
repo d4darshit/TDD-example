@@ -41,6 +41,12 @@ class CalculatorTests {
 	public void addTwoNumbers() {
 		assertEquals(10,ob.add("4,6"));
 	}
+	@Test
+	public void whenNegativeNumberIsUsed() {
+		Assertions.assertThrows(RuntimeException.class, ()->{
+			ob.add("1,-2");
+		});
+	}
 	
 	
 	
