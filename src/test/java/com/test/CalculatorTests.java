@@ -35,7 +35,7 @@ class CalculatorTests {
 	}
 	@Test
 	public void whenNoNumbersAreGivenThenReturnZero() {
-		assertEquals(0, "");
+		assertEquals(0, ob.add(""));
 	}
 	
 	
