@@ -23,6 +23,15 @@ class CalculatorTests {
 			ob.add("1,2,3");
 		});
 	}
+	@Test
+	public void WhenInvalidInputIsGiven() {
+		Assertions.assertThrows(RuntimeException.class, ()->{
+			ob.add("1,two");
+		});
+	}
+	
+	
+	
 	@AfterEach
 	public void destroyCalculatorObj() {
 		ob = null;
