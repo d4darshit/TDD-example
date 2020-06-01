@@ -3,7 +3,8 @@ package com.cal;
 public class Calculator {
 
 	public int add(String string) {
-				String array[] = string.split(",");
+				int sum=0;
+				String array[] = string.split(",|\n");
 				if(array.length>2) {
 					throw new RuntimeException("Only two numbers are allowed");
 				}
@@ -12,7 +13,12 @@ public class Calculator {
 						Integer.parseInt(x);
 					}
 				}
-				return 0;
+				for(String x:array) {
+					sum += Integer.parseInt(x);
+				}
+				
+				
+				return sum;
 	
 	}
 

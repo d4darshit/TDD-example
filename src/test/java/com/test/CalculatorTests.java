@@ -33,6 +33,10 @@ class CalculatorTests {
 	public void allowNewLineBetweenNumbers() {
 		assertEquals(3,ob.add("1\n2"));
 	}
+	@Test
+	public void whenNoNumbersAreGivenThenReturnZero() {
+		assertEquals(0, "");
+	}
 	
 	
 	
