@@ -57,8 +57,10 @@ class CalculatorTests {
 	public void TestGetCalledCount() {
 		ob.getCalledCount();
 	}
-	
-	
+	@Test
+	public void checkForNumbersGreaterThanThousand() {
+		assertEquals(2,"1001,2");
+	}
 	
 	@AfterEach
 	public void destroyCalculatorObj() {
